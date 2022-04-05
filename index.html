@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: url(pic.jpg.jpg);
+            background-size: cover;
+        }
+        form{
+            margin-top: 50px;
+            text-align: center;
+        }
+        input{
+            display: block;
+            width: 350px;
+            height: 40px;
+            margin: 20px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            border-bottom: 1px solid white;
+            background: transparent;
+            color: white;
+        }
+        button{
+            width: 350px;
+            height: 40px;
+            font-size: 20px;
+            background-color: blue;
+            border: none;
+            color: white;
+            margin-top: 20px;
+        }
+        form h1{
+            margin-bottom: 30px;
+            color: white;
+        }
+        ::placeholder{
+            color: white;
+        }
+    </style>
+    <form>
+        <h1>SignUp</h1>
+        <input type="text" name="" placeholder="Username">
+        <input type="text" name="" list="tech" placeholder="Technology">
+        <datalist id="tech">
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+    </datalist>
+    <input type="email" name="" placeholder="Email">
+    <input type="password" name="" placeholder="Password">
+    <input type="password" name="" placeholder="Confirm Password">
+    <button type="submit">SignUp</button>
+    </form>
+</body>
+</html>
